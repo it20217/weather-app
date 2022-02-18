@@ -1,6 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
   text-align: center;
   color: #000;
-  background-color: red;
+  background-color: #fff;
 }
+
+.weather > input, button {
+  width: 200px;
+  height: 30px;
+  margin: 20px 0 0;
+  border: solid 1px skyblue;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+input::placeholder {
+  font-style: italic;
+}
+
+.noData, .response {
+  margin: 50px 0;
+}
+
+
+
 
